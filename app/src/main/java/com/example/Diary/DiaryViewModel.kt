@@ -40,7 +40,5 @@ class DiaryViewModel(val diaryRepository: DiaryRepository=Graph.diaryRepository)
             diaryRepository.DeleteADiary(diary)
         }
     }
-    fun getDiaryById(id: Long): Flow<Diary> {
-        return diaryRepository.getDiaryById(id)
-    }
+
 }

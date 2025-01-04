@@ -12,10 +12,6 @@ class DiaryRepository(private val diaryDao: DiaryDao)
 
     fun getDiaries():Flow<List<Diary>> =diaryDao.getALlDiaries()
 
-     fun getDiaryById(id:Long):Flow<Diary>
-    {
-        return diaryDao.getADiaryById(id)
-    }
 
     suspend fun UpdateADiary(diary: Diary)
     {

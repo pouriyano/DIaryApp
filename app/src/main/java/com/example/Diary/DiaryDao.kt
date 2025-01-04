@@ -22,7 +22,4 @@ abstract class DiaryDao {
     @Delete
     abstract suspend fun deleteDiary(diary: Diary)
 
-    @Query("Select * from diaries_table where id = :id")
-    abstract  fun getADiaryById(id: Long): Flow<Diary>
-
 }
